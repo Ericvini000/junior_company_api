@@ -15,7 +15,7 @@ class WorkStatus(models.TextChoices):
 
 
 class Account(AbstractUser):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4())
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     profile_url = models.URLField(max_length=200)
     experience = models.CharField(
         max_length=14, choices=ExperienceLevel.choices, default=ExperienceLevel.JUNIOR
