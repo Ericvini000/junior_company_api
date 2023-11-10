@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-MY_APPS = ["accounts"]
+MY_APPS = ["accounts", "infos"]
 
 DJANGO_APPS = [
     "django.contrib.admin",
